@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace prjVendas
 {
-    public partial class frmCliente : Form
+    public partial class frmRelatorio : Form
     {
-        public frmCliente()
+        public frmRelatorio()
         {
             InitializeComponent();
         }
 
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
 
         }

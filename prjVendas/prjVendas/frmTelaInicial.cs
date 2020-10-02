@@ -56,7 +56,8 @@ namespace prjVendas
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            frmRelatorio formRelatorio = new frmRelatorio();
+            formRelatorio.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -66,7 +67,8 @@ namespace prjVendas
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            frmPedido formPedido = new frmPedido();
+            formPedido.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
