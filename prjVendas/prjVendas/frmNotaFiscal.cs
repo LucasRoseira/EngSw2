@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace prjVendas
 {
-    public partial class frmPedidosEspera : Form
+    public partial class frmNotaFiscal : Form
     {
-        public frmPedidosEspera()
+        public frmNotaFiscal()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label17_Click(object sender, EventArgs e)
         {
 
         }

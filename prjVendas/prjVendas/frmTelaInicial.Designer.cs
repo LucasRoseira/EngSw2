@@ -43,6 +43,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -247,21 +250,64 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.button15);
+            this.panel3.Controls.Add(this.button13);
             this.panel3.Location = new System.Drawing.Point(363, 64);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(654, 634);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // button15
+            // 
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
+            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button15.Location = new System.Drawing.Point(312, 58);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(166, 35);
+            this.button15.TabIndex = 61;
+            this.button15.Text = "Imprimir";
+            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button13.Location = new System.Drawing.Point(105, 58);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(130, 35);
+            this.button13.TabIndex = 60;
+            this.button13.Text = "PDF";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(95, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(509, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Relatório de Vendas por Período de Tempo 01/01/2019 até 31/12/2019";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(99, 140);
+            this.pictureBox2.Location = new System.Drawing.Point(57, 140);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(474, 422);
-            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.Size = new System.Drawing.Size(536, 326);
+            this.pictureBox2.TabIndex = 62;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // frmTelaInicial
             // 
@@ -275,13 +321,15 @@
             this.MinimizeBox = false;
             this.Name = "frmTelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tela Inicial";
+            this.Text = "Relatório de Vendas por Período de Tempo";
+            this.Load += new System.EventHandler(this.frmTelaInicial_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -302,8 +350,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -46,7 +46,8 @@ namespace prjVendas
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            frmNotaFiscal frmVisu = new frmNotaFiscal();
+            frmVisu.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -56,7 +57,7 @@ namespace prjVendas
 
         private void button5_Click(object sender, EventArgs e)
         {
-            frmRelatorio formRelatorio = new frmRelatorio();
+            frmRecibo formRelatorio = new frmRecibo();
             formRelatorio.Show();
         }
 
@@ -67,7 +68,7 @@ namespace prjVendas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmPedido formPedido = new frmPedido();
+            frmPedidosEspera formPedido = new frmPedidosEspera();
             formPedido.Show();
         }
 
@@ -92,6 +93,11 @@ namespace prjVendas
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmTelaInicial_Load(object sender, EventArgs e)
         {
 
         }

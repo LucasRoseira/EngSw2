@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -233,6 +234,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel3.Controls.Add(this.button11);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(364, 66);
             this.panel3.Name = "panel3";
@@ -247,6 +249,21 @@
             this.pictureBox2.Size = new System.Drawing.Size(755, 257);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            // 
+            // button11
+            // 
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button11.Location = new System.Drawing.Point(440, 424);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(109, 35);
+            this.button11.TabIndex = 60;
+            this.button11.Text = "Imprimir";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // frmRecibo
             // 
@@ -286,5 +303,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button11;
     }
 }
